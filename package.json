@@ -7,7 +7,7 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.43.7",
+    "@slidev/cli": "^0.43.15",
     "@slidev/theme-default": "^0.21.2",
     "@slidev/theme-seriph": "^0.21.3",
     "@vueuse/integrations": "^10.6.1",
@@ -15,6 +15,6 @@
   },
   "devDependencies": {
     "@iconify-json/logos": "^1.1.37",
-    "@iconify-json/mdi": "^1.1.54"
+    "@iconify-json/mdi": "^1.1.55"
   }
 }
