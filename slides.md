@@ -12,7 +12,7 @@ transition: fade
 
 # <span class="text-[#00dc82]">Nuxt</span> 3 <logos-nuxt-icon class="text-xl" />
 
-## Just Vue and a bit of <span class="text-[#80eec0]">Magic</span>?
+## Just Vue and a bit of <span class="text-[#00DC82] dark:text-[#80eec0]">Magic</span>?
 
 ### ct webdev 2023
 
@@ -45,7 +45,7 @@ heading: About me
 <template v-slot:right>
 <VClicks class="space-y-2 mt-10 text-xl h-full">
 
-* <mdi-account-check class="text-green-100" /> **Web Engineering Consultant**
+* <mdi-account-check class="dark:text-green-100 text-green-700" /> **Web Engineering Consultant**
 * <mdi-microphone /> Speaker & Instructor
 * <logos-nuxt-icon /> Nuxt.js Team
 * <mdi-twitter class="text-blue-400" /><mdi-youtube class="text-red-500" /><mdi-twitch class="text-purple-700" /> @TheAlexLichter
@@ -227,7 +227,7 @@ heading: Thank you for your attention!
 
 <template v-slot:right>
 
-* <mdi-account-check class="text-green-100" /> **Web Engineering Consultant**
+* <mdi-account-check class="dark:text-green-100 text-green-700" /> **Web Engineering Consultant**
 * <mdi-microphone /> Speaker & Instructor
 * <logos-nuxt-icon /> Nuxt.js Team
 * <mdi-twitter class="text-blue-400" /><mdi-youtube class="text-red-500" /><mdi-twitch class="text-purple-700" /> @TheAlexLichter
@@ -253,7 +253,14 @@ hideLogoInCorner: true
 
 <div class="flex mx-32 justify-around">
 
-<img class="w-32 h-32 mt-16 mx-auto" src="https://raw.githubusercontent.com/manniL/static/main/logo-lightbulb-white-red.svg" />
+<LightOrDark>
+<template #light>
+  <img class="w-32 h-32 mt-16 mx-auto" src="https://raw.githubusercontent.com/manniL/static/main/logo-lightbulb-black-red.svg" />
+</template>
+<template #dark>
+  <img class="w-32 h-32 mt-16 mx-auto" src="https://raw.githubusercontent.com/manniL/static/main/logo-lightbulb-white-red.svg" />
+</template>
+</LightOrDark>
 
 <Qrcode url="https://lichter.link/ct-23/" class="mt-8 mx-auto" note="Slides" />
 
